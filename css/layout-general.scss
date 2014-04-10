@@ -1,0 +1,245 @@
+/**
+ * SASS File: 		lauout-general.sass
+ * Author:        	Chris Humboldt
+ * Last Edited:   	30 December 2013
+ */
+
+// Table of Contents:
+// ---------------------------------------------------------------------------------------
+
+// Imports
+// Variables
+// Global
+// Large View
+// Fluid View
+// Small View
+
+
+/* Imports
+--------------------------------------------------------------------------------------- */
+// Import this file to get the webplate helper functions and the $page_width variable.
+// You will also have access to the $images_root variable that will link automatically
+// to the "img" folder in "webplate/extras". This makes it easier to reference in your 
+// SASS. To use this variable do the following:
+//
+// background-image: url(#{$images_root}/your-image-file.jpg);
+//
+// This is editable by changing "_settings.scss". As per normal you will need to compile
+// "core/sass/webplate-imports.scss" to "webplate/core/css/webplate.css" for the changes 
+// to take effect.
+
+@import "../../core/sass/web-mixins";
+
+
+// Variables
+// ---------------------------------------------------------------------------------------
+$base-padding 					: 10px;
+$link-height					: 46px;
+$base-grey						: #c0c0c0;
+
+
+// Mixins
+// ---------------------------------------------------------------------------------------
+@mixin back-colour() {
+	background-color: #f4f5f7;
+}
+
+
+// Delete this
+// ---------------------------------------------------------------------------------------
+.webplate {
+	.tri-blocks .tb-inner {
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.tri-blocks .tb-inner {
+		background-image: url("#{$images_root}/examples/general-tri-block.png");
+	}
+	.top-strip .content .button {
+		margin-top: 4px;
+		margin-right: 6px;
+	}
+}
+
+
+// Global
+// ---------------------------------------------------------------------------------------
+.webplate {
+	
+	// General
+	p {
+		font-size: 0.889em;
+	}
+	
+	// Inner classes
+	.top-strip .inner:first-child, .header .inner:first-child, .core-info .inner:first-child, .footer .inner:first-child {
+		padding: 0px $base-padding;
+	}	
+	.tri-blocks .inner:first-child {
+		padding-right: $base-padding;
+		padding-bottom: $base-padding;
+	}
+	
+	// Top strip
+	.top-strip {
+		// Content
+		.content {
+			padding: 12px 10px;
+			@include back-colour();
+			
+			// Small bar
+			.navigation-trigger {
+				display: block;
+				margin-top: 4px;
+				font-size: 1.778em;
+				color: $base-grey;
+				@include animate(color);
+			}
+			.navigation-trigger:active {
+				color: #952312;
+			}
+			h5 {
+				float: left;
+				padding: 12px 24px;
+				margin: 0px;
+				font-weight: 300;
+				text-align: center;
+				color: $base-grey;
+			}
+			// Navigation
+			.navigation { 
+				padding-left: 4px;
+				list-style: none;
+				
+				li {
+					float: left;
+					
+					a {
+						display: block;
+						padding: 0px 12px;
+						height: $link-height;
+						line-height: $link-height;
+						font-size: 0.889em;
+						color: $base-grey;
+						@include animate(all);
+					}
+					a:hover {
+						color: lighten(#000, 20%);
+						background-color: lighten(#000, 80%);
+					}
+				}
+			}
+		}
+	}
+	
+	// Header
+	.header {
+		// Banner container
+		.banner-container {
+			height: 450px;
+			margin-top: $base-padding;
+			@include back-colour();
+			
+			.flick-title {
+				color: $base-grey;
+				font-weight: 300;
+			}
+		}
+	}
+	
+	// Tri blocks
+	.tri-blocks {
+		// Blocks
+		.tb {
+			padding-top: $base-padding;
+			padding-left: $base-padding;
+			
+			// Blocks inner
+			.tb-inner {
+				height: 240px;
+				@include back-colour();
+			}
+		}
+	}
+	
+	// Core information
+	.core-info {
+		.content {
+			margin-top: $base-padding;
+			padding: $base-padding * 3;
+			padding-bottom: 0px;
+			@include back-colour();
+		}
+	}
+	
+	// Footer
+	.footer .content {
+		margin-top: $base-padding;
+		@include back-colour();
+		
+		ul {
+			list-style: none;
+		}
+		.pad-it {
+			padding: $base-padding * 3;
+		}
+		a, p {
+			font-size: 0.875em;
+		}
+		h6 {
+			margin-bottom: $base-padding;
+			font-weight: 300;
+		}
+	}
+}
+
+// No touch CSS
+.no-touch .webplate .top-strip .content .navigation-trigger:hover {
+	color: #E8543F;
+}
+
+
+// Large View (Desktop and iPad)
+// ---------------------------------------------------------------------------------------
+@media screen and (min-width: 701px) {
+	.webplate {
+	}
+}
+
+
+// Fluid View (Desktop and iPad)
+// ---------------------------------------------------------------------------------------
+@media screen and (max-width: $limit_width) {
+	.webplate {
+	}
+}
+
+
+// Small View (iPhone)
+// ---------------------------------------------------------------------------------------
+@media screen and (-webkit-min-device-pixel-ratio: 3.0) and (max-width: 1080px), screen and (max-width: 700px) {
+	.webplate {
+		
+		// Navigation
+		.webplate-navigation {
+			h6 {
+				margin: 0px;
+				margin-bottom: 16px;
+				padding: 16px;
+				color: #fff;
+				font-weight: 300;
+				@include drop-shadow(#000, 14px);
+			}
+			a {
+				display: block;
+				padding: 4px 16px;
+			}
+		}
+		
+		// Top strip
+		.top-strip .content h5 {
+			float: none;
+			padding: 12px 0px;
+		}
+	}
+}

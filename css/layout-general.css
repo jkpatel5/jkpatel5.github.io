@@ -1,0 +1,126 @@
+/**
+ * SASS File: 		lauout-general.sass
+ * Author:        	Chris Humboldt
+ * Last Edited:   	30 December 2013
+ */
+/* Imports
+--------------------------------------------------------------------------------------- */
+/**
+ * LESS File: 		mixins.scss
+ * Author:        	Chris Humboldt
+ * Last Edited:   	30 December 2013
+ * Edited By:		Chris Humboldt
+ */
+/**
+ * SASS File: 		settings.scss
+ * Author:        	Chris Humboldt
+ * Last Edited:   	30 December 2013
+ */
+.webplate .tri-blocks .tb-inner {
+  background-position: center;
+  background-repeat: no-repeat; }
+.webplate .tri-blocks .tb-inner {
+  background-image: url("../images/examples/general-tri-block.png"); }
+.webplate .top-strip .content .button {
+  margin-top: 4px;
+  margin-right: 6px; }
+
+.webplate p {
+  font-size: 0.889em; }
+.webplate .top-strip .inner:first-child, .webplate .header .inner:first-child, .webplate .core-info .inner:first-child, .webplate .footer .inner:first-child {
+  padding: 0px 10px; }
+.webplate .tri-blocks .inner:first-child {
+  padding-right: 10px;
+  padding-bottom: 10px; }
+.webplate .top-strip .content {
+  padding: 12px 10px;
+  background-color: #f4f5f7; }
+  .webplate .top-strip .content .navigation-trigger {
+    display: block;
+    margin-top: 4px;
+    font-size: 1.778em;
+    color: silver;
+    -webkit-transition: color 0.2s ease-out;
+    -moz-transition: color 0.2s ease-out;
+    -o-transition: color 0.2s ease-out;
+    -ms-transition: color 0.2s ease-out;
+    transition: color 0.2s ease-out; }
+  .webplate .top-strip .content .navigation-trigger:active {
+    color: #952312; }
+  .webplate .top-strip .content h5 {
+    float: left;
+    padding: 12px 24px;
+    margin: 0px;
+    font-weight: 300;
+    text-align: center;
+    color: silver; }
+  .webplate .top-strip .content .navigation {
+    padding-left: 4px;
+    list-style: none; }
+    .webplate .top-strip .content .navigation li {
+      float: left; }
+      .webplate .top-strip .content .navigation li a {
+        display: block;
+        padding: 0px 12px;
+        height: 46px;
+        line-height: 46px;
+        font-size: 0.889em;
+        color: silver;
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        -ms-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out; }
+      .webplate .top-strip .content .navigation li a:hover {
+        color: #333333;
+        background-color: #cccccc; }
+.webplate .header .banner-container {
+  height: 450px;
+  margin-top: 10px;
+  background-color: #f4f5f7; }
+  .webplate .header .banner-container .flick-title {
+    color: silver;
+    font-weight: 300; }
+.webplate .tri-blocks .tb {
+  padding-top: 10px;
+  padding-left: 10px; }
+  .webplate .tri-blocks .tb .tb-inner {
+    height: 240px;
+    background-color: #f4f5f7; }
+.webplate .core-info .content {
+  margin-top: 10px;
+  padding: 30px;
+  padding-bottom: 0px;
+  background-color: #f4f5f7; }
+.webplate .footer .content {
+  margin-top: 10px;
+  background-color: #f4f5f7; }
+  .webplate .footer .content ul {
+    list-style: none; }
+  .webplate .footer .content .pad-it {
+    padding: 30px; }
+  .webplate .footer .content a, .webplate .footer .content p {
+    font-size: 0.875em; }
+  .webplate .footer .content h6 {
+    margin-bottom: 10px;
+    font-weight: 300; }
+
+.no-touch .webplate .top-strip .content .navigation-trigger:hover {
+  color: #E8543F; }
+
+@media screen and (-webkit-min-device-pixel-ratio: 3) and (max-width: 1080px), screen and (max-width: 700px) {
+  .webplate .webplate-navigation h6 {
+    margin: 0px;
+    margin-bottom: 16px;
+    padding: 16px;
+    color: #fff;
+    font-weight: 300;
+    box-shadow: 0px 0px 14px black;
+    -webkit-box-shadow: 0px 0px 14px black;
+    -moz-box-shadow: 0px 0px 14px black; }
+  .webplate .webplate-navigation a {
+    display: block;
+    padding: 4px 16px; }
+  .webplate .top-strip .content h5 {
+    float: none;
+    padding: 12px 0px; } }

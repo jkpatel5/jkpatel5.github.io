@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	
+	
+	<title>JayP's Site</title>
+
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="demoPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+	
+    <!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+		
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>	
+	
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="examples.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var pepe = $.fn.fullpage({
+				slidesColor: ['#1083E1', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+				menu: '#menu'
+			});
+			
+		});
+	</script>
+
+	<style>
+	
+	/*#section0{
+		background-image: url(img/beach.jpg);
+		
+		background-size: cover;
+
+		-webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+	}*/
+
+	#aboutmepix{
+ width: 200px;
+ height: 200px;
+ background-image: url('img/self1.jpg');
+ border: 5px solid white;
+ display: block;
+ border-radius: 100px;
+ -webkit-border-radius: 100px;
+ -moz-border-radius: 100px;
+ display: block;
+ margin: 0px auto;
+
+}
+
+	</style>
+
+</head>
+<body>
+
+
+
+<div class="section " id="section0">
+	<h1 id="scripthead">Jay Patel</h1>
+	<p style=" font-style: italic; font-size: 16px ">An eye for eye makes the whole world bline. - Mahatama Gandhi</p>
+	<div style="padding-left: 30% " >
+	
+	
+	<a class="twitter-roll social-roll" href="http://twitter.com/jkpatel5" target="_blank"></a>
+	<a class="facebook-roll social-roll" href="http://www.facebook.com/pateljay/" target="_blank"></a>
+	<a class="google-roll social-roll" href="http://www.plus.google.com/jaypatel5" target="_blank"></a>	
+	<a class="github-roll social-roll" href="http://github.com/jkpatel5" target="_blank"></a>
+	<a class="linkedin-roll social-roll" href="http://www.linkedin.com/in/jaypatel3" target="_blank"></a>	
+	<a class="stumbleupon-roll social-roll" href="http://www.stumbleupon.com/jkpatel5" target="_blank"></a>
+	<a class="instagram-roll social-roll" href="http://www.instagram.com/jkpatel5" target="_blank"></a>
+
+
+</div>
+</div>
+
+<div class="section" id="section2">
+	<div class="intro">
+
+		<h1>About Me</h1>
+		<div id="aboutmepix"></div>
+		<p>.</p>
+		<img src="imgs/example2.png" alt="example" />
+	</div>
+</div>
+<div class="section" id="section1">
+    <div class="slide">
+		<div class="intro">
+			<h1>Projects</h1>
+			<p>Some of the projects</p>
+			<img src="imgs/slider.png" alt="slider" />
+		</div>
+		
+	</div>
+    <div class="slide">
+		<div class="intro">
+			<img src="imgs/1.png" alt="simple" />
+			<h1>Project1</h1>
+			<p></p>
+		</div>
+	</div>
+    <div class="slide">
+		<div class="intro">
+			<img src="imgs/2.png" alt="Cool" />
+			<h1>Project2</h1>
+			<p></p>
+		</div>
+	</div>
+    <div class="slide">
+		<div class="intro">
+			<img src="imgs/3.png" alt="Compatible" />
+			<h1>Paper</h1>
+			<p>Two-Factor Authentication</p>
+		</div>
+	</div>
+</div>
+
+<div class="section" id="section3">
+	<div class="intro">
+		<h1>Contact Me</h1>
+		
+	</div>
+	
+</div>
+
+<ul id="menu">
+	<li data-menuanchor="firstPage"><a href="#firstPage">Home</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">About Me</a></li>
+	<li data-menuanchor="3rdPage"><a href="#3rdPage">Projects</a></li>
+	<li data-menuanchor="4thpage"><a href="#4thpage">Contact Me</a></li>
+</ul>
+
+</body>
+</html>
