@@ -110,6 +110,29 @@ float: left;
 }
 
 
+/* About me pix css */
+#aboutmepix{
+ width: 200px;
+ height: 200px;
+ background-image: url('../img/self1.jpg');
+ border: 5px solid white;
+ display: block;
+ border-radius: 100px;
+ -webkit-border-radius: 100px;
+ -moz-border-radius: 100px;
+ display: block;
+ margin: 0px auto;
 
+}
+/*#section0{
+    background-image: url(img/beach.jpg);
+    
+    background-size: cover;
 
+    -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  }*/
 
